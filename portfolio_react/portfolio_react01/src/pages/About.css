@@ -65,40 +65,29 @@ li {
 }
 
 
-.custom-wave {
-  position: relative;
-  height: 100vh;
-  background-color: #edb352;
-  /* 너가 원하는 배경색 */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.wave-layer {
+/* 파도 애니메이션 */
+.wave-container {
   position: absolute;
-  bottom: -70px;
-  width: 200%;
-  height: 250px;
-  background-color: white;
-  border-radius: 100%;
-  animation: waveMotion 6s ease-in-out infinite;
-  transform: translateX(-25%);
-  opacity: 0.8;
-  filter: blur(10px);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  z-index: 0;
 }
 
+.wave-svg {
+  width: 100%;
+  height: 100%;
+}
 
-@keyframes waveMotion {
-  0% {
-    transform: translateX(-25%) translateY(0) scaleX(1.2);
-  }
+.wave-path {
+  animation: waveBounce 2s ease-in-out infinite;
+  transform-origin: center;
+}
 
-  50% {
-    transform: translateX(-30%) translateY(10px) scaleX(1.3);
-  }
-
-  100% {
-    transform: translateX(-25%) translateY(0) scaleX(1.2);
-  }
+@keyframes waveBounce {
+  0%   { d: path("M0,192 C360,320 1080,0 1440,128 L1440,320 L0,320 Z"); }
+  50%  { d: path("M0,200 C360,340 1080,20 1440,136 L1440,320 L0,320 Z"); }
+  100% { d: path("M0,192 C360,320 1080,0 1440,128 L1440,320 L0,320 Z"); }
 }

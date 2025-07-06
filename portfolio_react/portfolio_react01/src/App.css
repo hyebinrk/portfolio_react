@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* {
+  font-family: 'Inter', 'Pretendard', sans-serif;
+}
+
+/* 제목 폰트 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Pretendard', sans-serif;
+  font-weight: 600;
+}
+
+/* 본문 폰트 */
+p, div, span {
+  font-family: 'Inter', 'Pretendard', sans-serif;
+  font-weight: 400;
+}
+
+/* 코드 블록 폰트 */
+code, pre {
+  font-family: 'JetBrains Mono', 'D2Coding', monospace;
+}
+
 #root {
   width: 100%;
   margin: 0;

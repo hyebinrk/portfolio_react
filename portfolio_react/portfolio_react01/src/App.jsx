@@ -1,9 +1,8 @@
-import React from 'react';
 import './App.css'
 import Navbar from './pages/Navbar';
 import About from './pages/About';
 import Skills from './pages/Skills';
-import Projects from './pages/Projects';
+import Projects from './pages/Project';
 
 function App() {
   return (

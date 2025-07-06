@@ -12,10 +12,6 @@
     z-index: 1000;
 }
 
-body {
-    /* padding-top: 60px; */
-    /* navbar 높이만큼 */
-}
 
 .nav-links {
     list-style: none;
@@ -33,4 +29,32 @@ body {
 .nav-links li a:hover {
     color: #edb352;
     text-shadow: 0 0 5px #f3985cdc, 0 0 10px #ff944d, 0 0 15px #ff944d, 0 0 25px #ffc299;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        background-color: #f8f6f6;
+        position: absolute;
+        top: 60px; /* navbar 높이 아래 */
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        display: none; /* 초기엔 안 보임 (JS로 토글 가능) */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
 }
