@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-section {
+  background-color: #edb352;
+  /* 연노랑 */
+  /* text-align: center; */
+  height: 100vh;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.skills-section h2 {
+  font-size: 4.0rem;
+  margin-bottom: 6.5rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.skill-category {
+  background-color: white;
+  border-radius: 100%;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 0 0 10px #999690;
+}
+
+.skill-category h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+.icon-item {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon-list img {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 10px #edb352;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.skill-category span {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+/* 물결 애니메이션 */
+.wave-background {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background-color: #edb352;
+  /* 배경색 */
+}
+
+/* 기본 물결 설정 */

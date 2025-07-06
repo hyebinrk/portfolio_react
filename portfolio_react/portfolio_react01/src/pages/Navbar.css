@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f6f6;
+    top: 0;
+    left: 0;
+    margin-bottom: 1rem;
+    color: #edb352;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    /* padding-top: 60px; */
+    /* navbar 높이만큼 */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #edb352;
+    font-weight: 1000;
+    font-size: 2rem;
+}
+
+.nav-links li a:hover {
+    color: #edb352;
+    text-shadow: 0 0 5px #f3985cdc, 0 0 10px #ff944d, 0 0 15px #ff944d, 0 0 25px #ffc299;
+}
