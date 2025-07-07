@@ -1,0 +1,5 @@
+# node_modules: 패키지 설치 폴더
+node_modules/
+
+# 빌드 결과물 (Vite 기준)
+dist/

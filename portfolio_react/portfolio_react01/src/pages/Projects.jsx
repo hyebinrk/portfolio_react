@@ -13,7 +13,7 @@ const Project = () => {
 정보가 흩어져 있어 불편했던 기존 문제점을 해결하고자, 사용자가 필요한 정보를 직관적으로 접근할 수 있도록 UX에도 신경썼습니다.`,
       tech: ["React", "Node.js", "Java", "Spring Boot", "Oracle", "DBeaver", "ApexChart"],
       github: "https://github.com/hyebinrk/ecommerce",
-      image: "/img/메인페이지.png"
+      image: "img/메인페이지.png"
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ UI 구현과 DB 연동을 맡아, 파이썬 기반으로 설계된 UI(디자이�
 처음 진행한 팀 프로젝트로, 조장 역할을 맡아 팀원 간 협업을 조율하며 전체 진행을 리드하였고, 많은 시행착오를 통해 실질적인 UI + DB 연동 경험을 쌓았습니다.`,
       tech: ["Python", "Qt Designer", "Oracle", "DBeaver"],
       github: "https://github.com/hyebinrk/task-manager",
-      image: "/img/교사로그인진입.png"
+      image: "img/교사로그인진입.png"
     }
   ];
 
